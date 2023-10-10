@@ -1,0 +1,475 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="icon" href="{% static 'img/favicon/favicon.png' %}" type="image/x-icon">
+<link rel="shortcut icon" href="{% static 'img/favicon/favicon.png' %}" type="image/x-icon">
+<title>News</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
+	 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="all">
+	 <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" />
+	 <link href="{% static 'css/element.css' %}" rel="stylesheet">
+
+     <script type="text/javascript"  src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+     <script  type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+
+<section id="header" class="clearfix">
+   <div class="col-sm-12 header clearfix">
+    <nav class="navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header  page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dropdown-thumbnail-preview">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><i><img src="{% static 'img/favicon/logo.png' %}" width="40px" height="auto"></i><span class="title">PETABYTE</span> NEWS</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+		<li><a href="world.html">World</a></li>
+        <li><a href="details.html">Details</a></li>
+		<li><a href="business.html">Business</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	  </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                    <ul class="dropdown-menu drop_1" style="min-width: 300px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="navbar-form navbar-left" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button">
+                                                Go!</button>
+                                        </span>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+          <ul class="dropdown-menu drop_1" role="menu">
+            <li><a href="#">Sign in</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Ragister</a></li>
+          </ul>
+        </li>
+		<li class="dropdown dropdown-large">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></a>
+				
+				<ul class="dropdown-menu dropdown-menu-large row">
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Glyphicons</li>
+							<li><a href="#">Available glyphs</a></li>
+							<li><a href="#">How to use</a></li>
+							<li><a href="#">Examples</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Dropdowns</li>
+							<li><a href="#">Example</a></li>
+							<li><a href="#">Aligninment options</a></li>
+							<li><a href="#">Headers</a></li>
+							<li><a href="#">Disabled menu items</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Button groups</li>
+							<li><a href="#">Basic example</a></li>
+							<li><a href="#">Button toolbar</a></li>
+							<li><a href="#">Sizing</a></li>
+							<li><a href="#">Nesting</a></li>
+							<li><a href="#">Vertical variation</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Button dropdowns</li>
+							<li><a href="#">Single button dropdowns</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Input groups</li>
+							<li><a href="#">Basic example</a></li>
+							<li><a href="#">Sizing</a></li>
+							<li><a href="#">Checkboxes and radio addons</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Navs</li>
+							<li><a href="#">Tabs</a></li>
+							<li><a href="#">Pills</a></li>
+							<li><a href="#">Justified</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Navbar</li>
+							<li><a href="#">Default navbar</a></li>
+							<li><a href="#">Buttons</a></li>
+							<li><a href="#">Text</a></li>
+							<li><a href="#">Non-nav links</a></li>
+							<li><a href="#">Component alignment</a></li>
+							<li><a href="#">Fixed to top</a></li>
+							<li><a href="#">Fixed to bottom</a></li>
+							<li><a href="#">Static top</a></li>
+							<li><a href="#">Inverted navbar</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+   </div>
+</section>
+<section id="all" class="clearfix">
+<section id="top" class="clearfix">
+   <div class="col-sm-12 top">
+    <h1><span class="story">TOP</span>STORIES</h1>
+   </div>
+   <div class="col-sm-12 top_1">
+    <div class="col-sm-6 top_1_left">
+	 <div class="top_1_left_1" style="background-image: url({{ business_data.0.urlToImage }});">
+		<h2 style="background:black;"><a href="{{ business_data.0.url }}">{{ business_data.0.title }}</a></h2>
+		<h4 style="background:black; padding:10px;">{{ business_data.0.description }}</h4>
+	 </div>
+	</div>
+	<div class="col-sm-6 top_1_right">
+	 <div class="col-sm-12 top_1_right_top">
+	  <div class="col-sm-6 top_1_right_top_left">
+	   <div class="col-sm-12 top_1_right_top_left_main">
+	    <div class="after_1">
+		 <img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ wallstreet_data.0.urlToImage }}" width="100%" />
+		</div>
+		<div class="after_2">
+		<h4><a href="{{ wallstreet_data.0.url }}">{{ wallstreet_data.0.title }}</a></h4>
+		</div>
+	   </div>
+	   <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_left">
+		 <p><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ wallstreet_data.1.urlToImage }}" width="100%" /></p>
+		</div>
+		<div class="col-sm-7 depart_right">
+		 <h4><a href="{{ wallstreet_data.1.url }}">{{ wallstreet_data.1.title }}</a></h4>
+		</div>
+	   </div>
+	   <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_left">
+		 <p><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ wallstreet_data.2.urlToImage }}" width="100%" /></p>
+		</div>
+		<div class="col-sm-7 depart_right">
+		 <h4><a href="{{ wallstreet_data.2.url }}">{{ wallstreet_data.2.title }}</a></h4>
+		</div>
+	   </div>
+	  </div>
+
+	  <div class="col-sm-6 top_1_right_top_left">
+		<div class="col-sm-12 depart">
+		 <div class="col-sm-5 depart_left">
+		  <p><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ getBuzzFeed.1.urlToImage }}" width="100%" /></p>
+		 </div>
+		 <div class="col-sm-7 depart_right">
+		  <h4><a href="{{ getBuzzFeed.1.url }}">{{ getBuzzFeed.1.title }}</a></h4>
+		 </div>
+		</div>
+		<div class="col-sm-12 depart">
+		 <div class="col-sm-5 depart_left">
+		  <p><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ getBuzzFeed.2.urlToImage }}" width="100%" /></p>
+		 </div>
+		 <div class="col-sm-7 depart_right">
+		  <h4><a href="{{ getBuzzFeed.2.url }}">{{ getBuzzFeed.2.title }}</a></h4>
+		 </div>
+		</div>
+		<div class="col-sm-12 top_1_right_top_left_main">
+			<div class="after_1">
+			 <img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ getBuzzFeed.0.urlToImage }}" width="100%" />
+			</div>
+			<div class="after_2">
+			<h4><a href="{{ getBuzzFeed.0.url }}">{{ getBuzzFeed.0.title }}</a></h4>
+			</div>
+		   </div>
+	   </div>
+	 </div>
+	</div>
+   </div>
+</section>
+<section id="center" class="clearfix">
+   <div class="col-sm-12 center clearfix">
+    <div class="col-sm-3 center_left">
+	 <div class="center_left_1" style="background-image: url({{ getBuzzFeed.3.urlToImage }}">
+	   <h2><a href="{{ getBuzzFeed.3.url }}">{{ getBuzzFeed.3.title }}</a></h2>
+	   <p>{{ getBuzzFeed.3.description }}</p>
+	 </div>
+	</div>
+	<div class="col-sm-3 center_middle">
+
+	 <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_newt_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ indianEntertainment.0.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_new_right">
+		 <h4><a href="{{ indianEntertainment.0.url }}">{{ indianEntertainment.0.title }}</a></h4>
+		</div>
+	   </div>
+	 <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_newt_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ indianEntertainment.1.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_new_right">
+		 <h4><a href="{{ indianEntertainment.1.url }}">{{ indianEntertainment.1.title }}</a></h4>
+		</div>
+	   </div>
+	 <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_newt_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ indianEntertainment.2.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_new_right">
+		 <h4><a href="{{ indianEntertainment.2.url }}">{{ indianEntertainment.2.title }}</a></h4>
+		</div>
+	   </div>
+	</div>
+	<div class="col-sm-3 center_middle">
+
+		<div class="col-sm-12 depart">
+		   <div class="col-sm-5 depart_newt_left">
+			<p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ indianEntertainment.3.urlToImage }}" width="100%" /></a></p>
+		   </div>
+		   <div class="col-sm-7 depart_new_right">
+			<h4><a href="{{ indianEntertainment.3.url }}">{{ indianEntertainment.3.title }}</a></h4>
+		   </div>
+		  </div>
+		<div class="col-sm-12 depart">
+		   <div class="col-sm-5 depart_newt_left">
+			<p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ indianEntertainment.4.urlToImage }}" width="100%" /></a></p>
+		   </div>
+		   <div class="col-sm-7 depart_new_right">
+			<h4><a href="{{ indianEntertainment.4.url }}">{{ indianEntertainment.4.title }}</a></h4>
+		   </div>
+		  </div>
+		<div class="col-sm-12 depart">
+		   <div class="col-sm-5 depart_newt_left">
+			<p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ indianEntertainment.5.urlToImage }}" width="100%" onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" /></a></p>
+		   </div>
+		   <div class="col-sm-7 depart_new_right">
+			<h4><a href="{{ indianEntertainment.5.url }}">{{ indianEntertainment.5.title }}</a></h4>
+		   </div>
+		  </div>
+	   </div>
+	<div class="col-sm-3 center_right">
+	 <div class="center_right_1" style="background-image: url({{ getBuzzFeed.4.urlToImage }}">
+	  <h2><a href="{{ getBuzzFeed.4.url }}">{{ getBuzzFeed.4.title }}</a></h2>
+	  <p>{{ getBuzzFeed.4.description }}</p>
+	 </div>
+	</div>
+   </div>
+   <div class="col-sm-12 center_bottom clearfix">
+    {% for article in news_data %}
+    <div class="col-sm-3 center_bottom_left">
+        <div class="center_bottom_left_1">
+            <img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ article.urlToImage }}" width="100%" />
+        </div>
+        <div class="center_bottom_left_2">
+            <h5><a href="{{ article.url }}">{{ article.title }}</a></h5>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+</section>
+
+<section id="center" class="clearfix">
+   <div class="col-sm-12 life_style clearfix">
+    <h1><span class="life">HEALTH</span> NEWS</h1>
+   </div>
+   <div class="col-sm-12 center_bottom clearfix">
+    {% for article in health|slice:":4" %}
+            <div class="col-sm-3 center_bottom_left">
+                <div class="center_bottom_left_1">
+                    <img src="{{ article.urlToImage }}" width="100%" alt="Image" onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';">
+                </div>
+                <div class="center_bottom_left_2">
+                    <h5><a href="{{ article.url }}">{{ article.title }}</a></h5>
+                </div>
+            </div>
+            {% endfor %}
+   </div>
+</section>
+<section id="center_2" class="clearfix">
+ <div class="col-sm-12 center_2 clearfix">
+  <h1><span class="intrest">INTE</span>RNATIONAL</h1>
+ </div>
+ <div class="col-sm-12 center_2_main clearfix">
+  <div class="col-sm-3 center_2_main_left">
+   <div class="center_2_main_left_1" style="background-image: url({{ science.0.urlToImage }}">
+    <h1><a href="{{ science.0.url }}">{{ science.0.title }}</a></h1>
+   </div>
+  </div>
+  <div class="col-sm-3 center_2_main_middle">
+       <div class="col-sm-12 top_1_right_top_left_main">
+	    <div class="after_1">
+		 <img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ science.2.urlToImage }}" width="100%" />
+		</div>
+		<div class="after_2">
+		<h4><a href="{{ science.2.url }}">{{ science.2.title }}</a></h4>
+		</div>
+	   </div>
+	   <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src=" {{ science.3.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_right">
+		 <h4><a href="{{ science.3.url }}">{{ science.3.title }}</a></h4>
+		</div>
+	   </div>
+	   <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ science.4.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_right">
+		 <h4><a href="{{ science.4.url }}">{{ science.4.title }}</a></h4>
+		</div>
+	   </div>
+	   <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ science.5.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_right">
+		 <h4><a href="{{ science.5.url }}">{{ science.5.title }}</a></h4>
+		</div>
+	   </div>
+  </div>
+  <div class="col-sm-3 center_2_main_left">
+   <div class="center_2_main_left_1" style="background-image: url({{ science.1.urlToImage }}">
+    <h1><a href="{{ science.1.url }}">{{ science.1.title }}</a></h1>
+   </div>
+  </div>
+  <div class="col-sm-3 center_2_main_middle">
+       <div class="col-sm-12 top_1_right_top_left_main">
+	    <div class="after_1">
+		 <img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ science.10.urlToImage }}" width="100%" />
+		</div>
+		<div class="after_2">
+		<h4><a href="{{ science.10.url }}">{{ science.10.title }}</a></h4>
+		</div>
+	   </div>
+	   <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ science.7.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_right">
+		 <h4><a href="{{ science.7.url }}">{{ science.7.title }}</a></h4>
+		</div>
+	   </div>
+	   <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ science.8.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_right">
+		 <h4><a href="{{ science.8.url }}">{{ science.8.title }}</a></h4>
+		</div>
+	   </div>
+	   <div class="col-sm-12 depart">
+	    <div class="col-sm-5 depart_left">
+		 <p><a href="#"><img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src="{{ science.9.urlToImage }}" width="100%" /></a></p>
+		</div>
+		<div class="col-sm-7 depart_right">
+		 <h4><a href="{{ science.9.url }}">{{ science.9.title }}</a></h4>
+		</div>
+	   </div>
+  </div>
+ </div>
+</section>
+
+<section id="footer" class="clearfix">
+   <div class="col-sm-12 footer clearfix">
+    <div class="col-sm-3 footer_left text-center">
+	 <div class="clearfix footer_left_top">
+	  <div class="clearfix footer_left_top_1">
+	   <img onerror="this.onerror=null;this.src='{% static 'img/28.jpg' %}';" src=" {% static 'img/favicon/logo.png' %}" style="background:red;" class="img-circle" />
+	  </div>
+	  <div class="clearfix footer_left_top_2">
+	   <h1>Follow us:</h1>
+	   <ul>
+	    <li class="training_1"><a href="#"><i class="fa fa-facebook"></i></a></li>
+		<li class="training_2"><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li class="training_2"><a href="#"><i class="fa fa-instagram"></i></a></li>
+		<li class="training_2"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		<li class="training_2"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+	   </ul>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-9 footer_right">
+	 <div class="col-sm-12 footer_right_top">
+	  <div class="col-sm-6 footer_right_top_left">
+	   <div class="col-sm-12 footer_right_top_left_main">
+	    <div class="col-sm-4 footer_right_top_left_main_inner">
+		 <ul>  
+		  <li class="bold big"> Torquent Per</li>
+		  <li><a href="#">Conubia Nostra</a></li>
+		  <li><a href="#">Augue Semper</a></li>
+		  <li><a href="#"> Quis Sem Nibh</a></li>
+		  <li><a href="#"> Mauris Massa</a></li>
+		  <li><a href="#"> Contact Us</a></li>
+		 </ul>
+		</div>
+		<div class="col-sm-4 footer_right_top_left_main_inner">
+		 <ul>  
+		  <li class="bold big"> Dignissim</li>
+		  <li><a href="#">All Tellus</a></li>
+		  <li><a href="#"> Cookie Policy</a></li>
+		  <li><a href="#">Consectetur </a></li>
+		  <li><a href="#">Praesent libero</a></li>
+		  <li><a href="#"> Contact Us</a></li>
+		 </ul>
+		</div>
+		<div class="col-sm-4 footer_right_top_left_main_inner">
+		 <ul>  
+		  <li class="bold big">Aptent Taciti</li>
+		  <li><a href="#"> Dapibus Diam</a></li>
+		  <li><a href="#">Adipiscing Elit</a></li>
+		  <li><a href="#"> Ipsum Dolor</a></li>
+		  <li><a href="#">Curabitursodales </a></li>
+		 </ul>
+		</div>
+	   </div>
+	  </div>
+	  <div class="col-sm-6 footer_right_top_right">
+		    <div class="footer_right_top_right_next">
+			  <h3 class="bold big">Duis sagittis</h3>
+			  <ul>
+			   <li><i class="glyphicon glyphicon-map-marker"></i> Fusce nec tellus sed augue semper porta.</li>
+			   <li><i class="glyphicon glyphicon-earphone"></i>+7878555444</li>
+			   <li><i class="glyphicon glyphicon-envelope"></i><a href="#">info@gmail.com</a></li>
+			  </ul>
+			</div>
+	  </div>
+	 </div>
+	</div>
+   </div>
+   <div class="col-sm-12 footer_last text-center">
+    <p class="website">� 2013 Your Website Name. All rights reserved | Design by<a href="http://www.templateonweb.com"> TemplateOnWeb</a></p>
+   </div>
+</section>
+</section>
+
+
+<script src="{% static 'js/classie.js' %}"></script>
+<script src="{% static 'js/cbpAnimatedHeader.js' %}"></script>
+</body>
+</html>
